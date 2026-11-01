@@ -36,7 +36,7 @@ public final class ClientModEvents {
                     @Override
                     public ResourceLocation getTextureLocation(LeninBossEntity entity) {
                         return ResourceLocation.withDefaultNamespace(
-                                "textures/entity/player/wide/lenin.png");
+                                "textures/entity/lenin.png");
                     }
                 });
     }
