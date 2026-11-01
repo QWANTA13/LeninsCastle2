@@ -1,0 +1,16 @@
+package ru.leninscastle.item;
+
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterials;
+import net.minecraft.world.item.Item;
+
+/**
+ * Вороние сапоги: кожаная броня для слота ног.
+ * Эффект плавного падения выдаётся обработчиком RavenBootsEvents.
+ */
+public class RavenBootsItem extends ArmorItem {
+    public RavenBootsItem() {
+        super(ArmorMaterials.LEATHER, ArmorItem.Type.BOOTS,
+                new Item.Properties().durability(165));
+    }
+}

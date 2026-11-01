@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "equipment",
+  "ingredients": [
+    { "item": "minecraft:leather_boots" },
+    { "item": "leninscastle:raven_feather" }
+  ],
+  "result": {
+    "id": "leninscastle:raven_boots",
+    "count": 1
+  }
+}
