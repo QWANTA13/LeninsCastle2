@@ -2,6 +2,7 @@ package ru.leninscastle.entity;
 
 import java.util.UUID;
 
+import ru.leninscastle.registry.ModEntities;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
@@ -217,5 +218,10 @@ public class RavenEntity extends TamableAnimal {
                                    net.minecraft.world.damagesource.DamageSource source) {
         // Ворон сам по себе не получает урон от приземления.
         return false;
+    }
+    @Override
+    public RavenEntity getBreedOffspring(net.minecraft.server.level.ServerLevel level,
+                                         net.minecraft.world.entity.AgeableMob otherParent) {
+        return ModEntities.RAVEN.get().create(level);
     }
 }
