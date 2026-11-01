@@ -35,8 +35,8 @@ public final class ClientModEvents {
                         0.5F) {
                     @Override
                     public ResourceLocation getTextureLocation(LeninBossEntity entity) {
-                        return ResourceLocation.withDefaultNamespace(
-                                "textures/entity/lenin.png");
+                        return ResourceLocation.fromNamespaceAndPath(
+        LeninsCastle.MOD_ID, "textures/entity/lenin.png");
                     }
                 });
     }
